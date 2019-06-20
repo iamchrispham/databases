@@ -1,3 +1,4 @@
+//DEFINES THE MESSAGES AND USERS
 var db = require('../db');
 
 module.exports = {
