@@ -6,10 +6,10 @@ var mysql = require('mysql');
 // and to the database "chat".
 
 let connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'chat'
+  host: 'localhost',
+  user: 'student',
+  password: 'student',
+  database: 'chat'
 })
 
 connection.connect((err) => {
@@ -19,3 +19,5 @@ connection.connect((err) => {
 
     console.log('Connected to the MySQL server');
 })
+
+module.exports = connection;
